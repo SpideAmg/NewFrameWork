@@ -11,7 +11,7 @@ public class PhonesPage extends CommonAPI {
 
 
 
-        public PhonesPage(WebDriver driver) {
+    public PhonesPage(WebDriver driver) {
         PageFactory.initElements(driver, this);
     }
 
