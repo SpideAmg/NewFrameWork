@@ -1,17 +1,17 @@
-package pages;
+package Pages;
+
 import base.CommonAPI;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 
-public class SearchResultPage extends CommonAPI {
+public class BrandsPage extends CommonAPI {
 
 
-    public SearchResultPage(WebDriver driver){
+    public BrandsPage (WebDriver driver){
         PageFactory.initElements(driver, this);
     }
 
-    public String getSearchPageTitle(){
+    public String getBrandPageTitle(){
         return getPageTitle();
     }
 }
-
