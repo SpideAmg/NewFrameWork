@@ -2,7 +2,7 @@ package eaby;
 
 import base.CommonAPI;
 import org.testng.annotations.Test;
-import pages.HomePage;
+import pages.ebayHomePage;
 import pages.SearchResultPage;
 
 public class HomePageTest extends CommonAPI {
@@ -11,7 +11,7 @@ public class HomePageTest extends CommonAPI {
 //    @Test
 
     public void iphone() {
-        HomePage homePage = new HomePage(getDriver());
+        ebayHomePage homePage = new ebayHomePage(getDriver());
         SearchResultPage searchResultPage = new SearchResultPage(getDriver());
         homePage.searchElement("iphone");
         homePage.clickSearchBtn();
@@ -22,7 +22,7 @@ public class HomePageTest extends CommonAPI {
 
     //    @Test
     public void ClickOnFloatingMenu() {
-        HomePage homePage = new HomePage(getDriver());
+        ebayHomePage homePage = new ebayHomePage(getDriver());
         homePage.searchElement("iphone");
         homePage.clickSearchBtn();
 
@@ -34,7 +34,7 @@ public class HomePageTest extends CommonAPI {
     //@Test
     public void ClickOnAcceptOfferfromIphoneSearch() {
 
-        HomePage homePage = new HomePage(getDriver());
+        ebayHomePage homePage = new ebayHomePage(getDriver());
         homePage.TypeIphoneInSearchBar();
         homePage.optionMenu();
 
@@ -43,21 +43,21 @@ public class HomePageTest extends CommonAPI {
 
     //   @Test
     public void hoverOverMotor() {
-        HomePage homePage = new HomePage(getDriver());
+        ebayHomePage homePage = new ebayHomePage(getDriver());
         homePage.hoverOverMotor(getDriver());
         homePage.clickOnMotorcycles();
     }
 
     //  @Test
     public void Beat() {
-        HomePage homePage = new HomePage(getDriver());
+        ebayHomePage homePage = new ebayHomePage(getDriver());
         homePage.hoverOverMotor(getDriver());
         homePage.clickOnBoat();
     }
 
     //    @Test
     public void FishingBeat() {
-        HomePage homePage = new HomePage(getDriver());
+        ebayHomePage homePage = new ebayHomePage(getDriver());
         homePage.hoverOverMotor(getDriver());
         homePage.clickOnBoat();
         homePage.clickonFishingBeat();
@@ -65,14 +65,14 @@ public class HomePageTest extends CommonAPI {
 
     //       @Test
     public void MyGarage() {
-        HomePage homePage = new HomePage(getDriver());
+        ebayHomePage homePage = new ebayHomePage(getDriver());
         homePage.hoverOverMotor(getDriver());
         homePage.clickOnMyGarage();
     }
 
     //  @Test
     public void homeGardan() {
-        HomePage homePage = new HomePage(getDriver());
+        ebayHomePage homePage = new ebayHomePage(getDriver());
         homePage.hoverOverhomegarden(getDriver());
         homePage.clickOntoolspower();
         waitFor(5);
@@ -80,7 +80,7 @@ public class HomePageTest extends CommonAPI {
 
     //   @Test
     public void Dewalt() {
-        HomePage homePage = new HomePage(getDriver());
+        ebayHomePage homePage = new ebayHomePage(getDriver());
         homePage.hoverOverhomegarden(getDriver());
         homePage.clickOntoolspower();
         homePage.clickOnDewalt();
@@ -89,7 +89,7 @@ public class HomePageTest extends CommonAPI {
 
     //    @Test
     public void loginInvalidEmailk() {
-        HomePage homePage = new HomePage(getDriver());
+        ebayHomePage homePage = new ebayHomePage(getDriver());
         homePage.clickOnLogin();
         homePage.typeOnloginEmailField("tex@gmail.");
         waitFor(6);
@@ -98,7 +98,7 @@ public class HomePageTest extends CommonAPI {
 
     //    @Test
     public void loginInvalidUserName() {
-        HomePage homePage = new HomePage(getDriver());
+        ebayHomePage homePage = new ebayHomePage(getDriver());
         homePage.clickOnLogin();
         homePage.typeOnloginEmailField("Jacob");
         waitFor(7);
@@ -107,7 +107,7 @@ public class HomePageTest extends CommonAPI {
 
     //    @Test
     public void loginMissingEmailfikled() {
-        HomePage homePage = new HomePage(getDriver());
+        ebayHomePage homePage = new ebayHomePage(getDriver());
         homePage.clickOnLogin();
         homePage.typeOnloginEmailField("");
         waitFor(10);
@@ -116,7 +116,7 @@ public class HomePageTest extends CommonAPI {
 
     //    @Test
     public void selectBabyOption() {
-        HomePage homePage = new HomePage(getDriver());
+        ebayHomePage homePage = new ebayHomePage(getDriver());
         homePage.clickDropdownbtn();
         waitFor(5);
 //       homePage.searchElement("ART");
@@ -127,7 +127,7 @@ public class HomePageTest extends CommonAPI {
 
     //    @Test
     public void buyBtn() {
-        HomePage homePage = new HomePage(getDriver());
+        ebayHomePage homePage = new ebayHomePage(getDriver());
         SearchResultPage searchResultPage = new SearchResultPage(getDriver());
         homePage.searchElement("Milwaukee 2401-22 M12 12V 1/4-Inch Hex Screwdriver Kit");
         homePage.clickSearchBtn();
@@ -141,7 +141,7 @@ public class HomePageTest extends CommonAPI {
     public void hoverovertoysr() {
 
 
-        HomePage homePage = new HomePage(getDriver());
+        ebayHomePage homePage = new ebayHomePage(getDriver());
         homePage.hoverOverToys(getDriver());
         homePage.clickOnToysDeal();
         homePage.clickOnAstrial();
@@ -152,7 +152,7 @@ public class HomePageTest extends CommonAPI {
 //    @Test
 
     public void hoveroverjewerly() {
-        HomePage homePage = new HomePage(getDriver());
+        ebayHomePage homePage = new ebayHomePage(getDriver());
         homePage.hoverOverJewerly(getDriver());
 //        homePage.clickOnFindjewerly;
         waitFor(7);
@@ -161,7 +161,7 @@ public class HomePageTest extends CommonAPI {
     @Test
 
     public void Electricaltools() {
-        HomePage homePage = new HomePage(getDriver());
+        ebayHomePage homePage = new ebayHomePage(getDriver());
         SearchResultPage searchResultPage = new SearchResultPage(getDriver());
         homePage.searchElement("elctrical tools");
         homePage.clickSearchBtn();
@@ -171,7 +171,7 @@ public class HomePageTest extends CommonAPI {
     @Test
 
     public void wachmen() {
-        HomePage homePage = new HomePage(getDriver());
+        ebayHomePage homePage = new ebayHomePage(getDriver());
         SearchResultPage searchResultPage = new SearchResultPage(getDriver());
         homePage.searchElement("wach men");
         homePage.clickSearchBtn();
@@ -180,7 +180,7 @@ public class HomePageTest extends CommonAPI {
     }
     @Test
     public void womenwach() {
-        HomePage homePage = new HomePage(getDriver());
+        ebayHomePage homePage = new ebayHomePage(getDriver());
         SearchResultPage searchResultPage = new SearchResultPage(getDriver());
         homePage.searchElement("womon wach");
         homePage.clickSearchBtn();
@@ -189,7 +189,7 @@ public class HomePageTest extends CommonAPI {
     }
     @Test
     public void shose() {
-        HomePage homePage = new HomePage(getDriver());
+        ebayHomePage homePage = new ebayHomePage(getDriver());
         SearchResultPage searchResultPage = new SearchResultPage(getDriver());
         homePage.searchElement("wkids shose");
         homePage.clickSearchBtn();
