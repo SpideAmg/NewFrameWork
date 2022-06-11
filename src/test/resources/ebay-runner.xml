@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="eaby smoke ebay">
+    <parameter name="useCloudEnv" value="false"></parameter>
+    <parameter name="envName" value="browserstack"></parameter>
+    <parameter name="os" value="mac"></parameter>
+    <parameter name="osVersion" value="11"></parameter>
+    <parameter name="browserName" value="chrome"></parameter>
+    <parameter name="browserVersion" value="99"></parameter>
+    <parameter name="url" value="https://www.ebay.com"></parameter>
+    <test name="SearchTest">
+        <classes>
+            <class name="eaby.HomePageTest"></class>
+        </classes>
+    </test>
+
+    <!--    <test name="search amazon">-->
+    <!--        <classes>-->
+    <!--            <class name="amazon.SearchTest"></class>-->
+    <!--        </classes>-->
+    <!--    </test>-->
+
+    <!--    <test name="dropdown amazon">-->
+    <!--        <classes>-->
+    <!--            <class name="amazon.DropdownTest"></class>-->
+    <!--        </classes>-->
+    <!--    </test>-->
+</suite>
