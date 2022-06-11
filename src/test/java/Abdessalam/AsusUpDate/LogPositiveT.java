@@ -4,8 +4,8 @@ package Abdessalam.AsusUpDate;
 import base.CommonAPI;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import AbdessalamPages.AsusHomePage;
-import AbdessalamPages.AsusLogInPage;
+import pages.AsusHomePage;
+import pages.AsusLogInPage;
 
 public class LogPositiveT extends CommonAPI {
 

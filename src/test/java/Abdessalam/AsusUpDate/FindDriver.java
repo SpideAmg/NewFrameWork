@@ -1,8 +1,9 @@
 package Abdessalam.AsusUpDate;
 
 import base.CommonAPI;
+import org.openqa.selenium.By;
 import org.testng.annotations.Test;
-import AbdessalamPages.AsusHomePage;
+import pages.AsusHomePage;
 
 public class FindDriver extends CommonAPI {
     @Test

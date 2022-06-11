@@ -3,7 +3,7 @@ package Abdessalam.RepublicOfGamers;
 import base.CommonAPI;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import AbdessalamPages.RepublicOfGamersHomePage;
+import pages.RepublicOfGamersHomePage;
 
 public class ExternalGraphicsDocks2022 extends CommonAPI {
     @Test

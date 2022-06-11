@@ -3,8 +3,8 @@ package Abdessalam.RepublicOfGamers;
 import base.CommonAPI;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import AbdessalamPages.ArmouryCratePage;
-import AbdessalamPages.RepublicOfGamersHomePage;
+import pages.ArmouryCratePage;
+import pages.RepublicOfGamersHomePage;
 
 public class ArmoryCrateHov extends CommonAPI {
     @Test

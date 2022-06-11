@@ -3,7 +3,7 @@ package Abdessalam.AsusUpDate;
 import base.CommonAPI;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import AbdessalamPages.AsusHomePage;
+import pages.AsusHomePage;
 
 public class Assertion extends CommonAPI {
 

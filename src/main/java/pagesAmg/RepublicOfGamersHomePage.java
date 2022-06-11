@@ -1,6 +1,7 @@
 package AbdessalamPages;
 
 import base.CommonAPI;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -86,73 +87,93 @@ public class RepublicOfGamersHomePage extends CommonAPI {
     @FindBy(xpath = "//*[@id=\"rogProduct\"]/div/div/div/div[1]/div[2]/header/div[2]/div[2]/ul/li/ul/li[6]/div[1]/span")
     private WebElement LogInFromBtn;
 
+    @FindBy(css = "#rogProduct > div > div > div > main > div.Actions__actionsContainer__3fXsG > div > div.Actions__actionScrollBar__2tyCS")
+    private WebElement RecentRelease;
+
+    @FindBy(css ="#rogProduct > div > div > div > main > div.Actions__actionsContainer__3fXsG > div > div.Actions__actionScrollBar__2tyCS > div > a:nth-child(1)")
+    private WebElement Image1;
+
+    @FindBy(css ="#rogProduct > div > div > div > main > div.Actions__actionsContainer__3fXsG > div > div.Actions__actionScrollBar__2tyCS > div > a:nth-child(2)")
+    private WebElement Image2;
+
+    @FindBy(css ="#rogProduct > div > div > div > main > div.Actions__actionsContainer__3fXsG > div > div.Actions__actionScrollBar__2tyCS > div > a:nth-child(3)")
+    private WebElement Image3;
+
+    @FindBy(css ="#rogProduct > div > div > div > main > div.Actions__actionsContainer__3fXsG > div > div.Actions__actionScrollBar__2tyCS > div > a:nth-child(4)")
+    private WebElement Image4;
+
+    @FindBy(css ="#rogProduct > div > div > div > main > div.Actions__actionsContainer__3fXsG > div > div.Actions__actionScrollBar__2tyCS > div > a:nth-child(5)")
+    private WebElement Image5;
+
+    @FindBy(xpath = "//*[@class='Header__asusLogo__30CFg']")
+    private WebElement AsusLogo;
 
 
 
-    public RepublicOfGamersHomePage(WebDriver driver){PageFactory.initElements(driver, this);}
 
 
 
 
+    public RepublicOfGamersHomePage(WebDriver driver) {
+        PageFactory.initElements(driver, this);
+    }
 
 
-
-    public void clickCookiesAcceptBtn(){
+    public void clickCookiesAcceptBtn() {
         click(CookiesAcceptBtn);
     }
 
-    public void hoverOverProducts(WebDriver driver){
+    public void hoverOverProducts(WebDriver driver) {
         hoverOver(driver, Products);
     }
 
-    public void clickSlideRightBtn(){
+    public void clickSlideRightBtn() {
         click(ExploreOurProductsSlideRightBtn);
     }
 
-    public void clickSlideLeftBtn(){
+    public void clickSlideLeftBtn() {
         click(ExploreOurProductsSlideLeftBtn);
     }
 
-    public void clickSearchBtn(){
+    public void clickSearchBtn() {
         click(SearchBtn);
     }
 
-    public void TypeSearchBar(){
-        type(SearchBar,"SSD");
+    public void TypeSearchBar() {
+        type(SearchBar, "SSD");
     }
 
-    public void ClearSearchBar(){
+    public void ClearSearchBar() {
         clear(SearchBar);
     }
 
-    public void TypeAndEnterSearchBarr(){
-        typeAndEnter(SearchBar,"KeyBoard");
+    public void TypeAndEnterSearchBarr() {
+        typeAndEnter(SearchBar, "KeyBoard");
     }
 
-    public String getTextProduct(){
+    public String getTextProduct() {
         return getElementText(ProductText);
     }
 
-    public void clickExternalGraphicsDocks2022(){
+    public void clickExternalGraphicsDocks2022() {
         click(ExternalGraphicsDocks2022);
     }
 
-    public void clickRogXgMobile2022(){
+    public void clickRogXgMobile2022() {
         click(RogXgMobile2022);
     }
 
-    public void hoverOverRogXgMobile2022(WebDriver driver){
+    public void hoverOverRogXgMobile2022(WebDriver driver) {
         hoverOver(driver, RogXgMobile2022);
     }
 
-    public String getEXTERNALGRAPHICDOCKSText(){
+    public String getEXTERNALGRAPHICDOCKSText() {
         return getElementText(EXTERNALGRAPHICDOCKSText);
     }
 
-    public String getROGXGMobile2022Text(){
+    public String getROGXGMobile2022Text() {
         return getElementText(EXTERNALGRAPHICDOCKSText);
     }
-
 
 
 //   public void scroollToVieuFb(WebDriver element){
@@ -164,61 +185,86 @@ public class RepublicOfGamersHomePage extends CommonAPI {
 //    }
 
 
-
-    public void ClickFacebookPage(){
+    public void ClickFacebookPage() {
         click(FacebookPage);
     }
 
-    public void ClickTwitterPage(){
+    public void ClickTwitterPage() {
         click(TwitterPage);
     }
 
-    public void clickMotherboardsFromMenu(){
+    public void clickMotherboardsFromMenu() {
         click(MotherboardsFromMenu);
     }
 
-    public void clickRogZenith(){
+    public void clickRogZenith() {
         click(RogZenith);
     }
 
-    public void clickNotifyMeBtn(){
+    public void clickNotifyMeBtn() {
         click(NotifyMeBtn);
     }
 
-    public void hoverOverDownloadMenu(WebDriver driver){
+    public void hoverOverDownloadMenu(WebDriver driver) {
         hoverOver(driver, DownloadMenu);
     }
 
-    public void clickWallPapersFromMenu(){
+    public void clickWallPapersFromMenu() {
         click(WallPapersFromMenu);
     }
 
-    public void hoverOverCommunityMenu(WebDriver driver){
-        hoverOver(driver,CommunityMenu);
+    public void hoverOverCommunityMenu(WebDriver driver) {
+        hoverOver(driver, CommunityMenu);
     }
 
-    public void clickNewsAndArticles(){
+    public void clickNewsAndArticles() {
         click(NewsAndArticles);
     }
 
-    public void clickLanguageBtn(){
+    public void clickLanguageBtn() {
         click(LanguageBtn);
     }
 
-    public void hoverOverInnovationMenu(WebDriver driver){
+    public void hoverOverInnovationMenu(WebDriver driver) {
         hoverOver(driver, InnovationMenu);
     }
 
-    public void clickArmoryBtn(){
+    public void clickArmoryBtn() {
         click(ArmoryBtn);
     }
 
-    public void clickLogInBtn(){
+    public void clickLogInBtn() {
         click(LogInBtn);
     }
 
-    public void clickLogInFromDropDown(){
+    public void clickLogInFromDropDown() {
         click(LogInFromBtn);
     }
+
+
+    public void ScrollDownToRecentReleases(WebDriver driver) {
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("arguments[0].scrollIntoView(true);", RecentRelease);
+
+    }
+
+
+    public void hoverOver5Image(WebDriver driver){
+        hoverOver(driver,Image1);
+        hoverOver(driver,Image2);
+        hoverOver(driver,Image3);
+        hoverOver(driver,Image4);
+        hoverOver(driver,Image5);
+    }
+
+    public void GoBack(WebDriver driver){
+        click(AsusLogo);
+        driver.navigate().back();
+        waitFor(2);
+        driver.navigate().forward();
+        waitFor(2);
+
+    }
+
 
 }

@@ -3,8 +3,8 @@ package Abdessalam.RepublicOfGamers;
 import base.CommonAPI;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import AbdessalamPages.ArticlesPage;
-import AbdessalamPages.RepublicOfGamersHomePage;
+import pages.ArticlesPage;
+import pages.RepublicOfGamersHomePage;
 
 public class MoreArticlesBtn extends CommonAPI {
 

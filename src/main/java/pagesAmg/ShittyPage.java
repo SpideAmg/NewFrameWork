@@ -39,6 +39,9 @@ public class ShittyPage extends CommonAPI {
     @FindBy(xpath = "//*[@id=\"product\"]/tbody/tr[9]/td[1]")
     private WebElement Amount33;
 
+    @FindBy(css = "openwindow")
+    private WebElement OpenWindow;
+
 
     public ShittyPage(WebDriver driver) {
         PageFactory.initElements(driver, this);
@@ -102,4 +105,20 @@ public class ShittyPage extends CommonAPI {
        scrollToView(Amount33);
 
     }
+//    public void switchwindow(WebDriver driver){
+//        String ParentWindowHandle = driver.getWindowHandle();
+//        click(OpenWindow);
+//        waitFor(3);
+//        String newPage = driver.getWindowHandle();
+//
+//        for(String NEWPAGE2 :driver.getWindowHandle()
+//        {
+//            getDriver().switchTo().window(NEWPAGE2);
+//        }
+//
+//        getDriver().close();
+//
+//
+//    }
+
 }

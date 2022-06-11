@@ -1,8 +1,9 @@
 package Abdessalam.AsusUpDate;
 
 import base.CommonAPI;
+import org.checkerframework.checker.units.qual.A;
 import org.testng.annotations.Test;
-import AbdessalamPages.AsusHomePage;
+import pages.AsusHomePage;
 
 public class GMobile extends CommonAPI {
     @Test
