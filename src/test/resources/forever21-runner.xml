@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Forever21 smoke">
+    <parameter name="useCloudEnv" value="false"></parameter>
+    <parameter name="envName" value="browserstack"></parameter>
+    <parameter name="os" value="windows"></parameter>
+    <parameter name="osVersion" value="11"></parameter>
+    <parameter name="browserName" value="chrome"></parameter>
+    <parameter name="browserVersion" value="99"></parameter>
+    <parameter name="url" value="https://www.forever21.com/"></parameter>
+
+    <test name="Forever21 HomePageTest">
+        <classes>
+            <class name="Forever21.HomePageTest"></class>
+        </classes>
+    </test>
+
+    <test name="Forever21.WomenPageTest">
+        <classes>
+            <class name="Forever21.WomenPageTest"></class>
+        </classes>
+    </test>
+
+    <test name="LoginPageTesting">
+        <classes>
+            <class name="Forever21.LoginPageTest"></class>
+        </classes>
+    </test>
+
+    <test name="GiftCardPageTesting">
+        <classes>
+            <class name="Forever21.GiftCardPageTest"></class>
+        </classes>
+    </test>
+
+<!--    <test name="HoverOverPage">-->
+<!--        <classes>-->
+<!--            <class name="Forever21.HoverOver"></class>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+
+</suite>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<?xml version="1.0" encoding="UTF-8" ?>-->
+<!--<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">-->
+
+<!--<suite name="Forever21">-->
+<!--    -->
+<!--    <parameter name="url" value="https://www.Forever21.com/"></parameter>-->
+<!--    <parameter name="browser" value="chrome"></parameter>-->
+<!--    <parameter name="os" value="windows"></parameter>-->
+
+
+<!--    -->
+
+<!--    <test name="Forever21.GiftCardPageTest">-->
+<!--        <classes>-->
+<!--            <class name="Forever21.GiftCardPageTest"></class>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+
+
+<!--    <test name="Forever21.LoginPageTest">-->
+<!--        <classes>-->
+<!--            <class name="Forever21.LoginPageTest"></class>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+<!--    <test name="Forever21.SaleTest">-->
+<!--        <classes>-->
+<!--            <class name="Forever21.Findstore"></class>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+
+<!--    <test name="GiftCard">-->
+<!--        <classes>-->
+<!--            <class name="Forever21.GiftCard"></class>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+<!--    <test name="Login">-->
+<!--        <classes>-->
+<!--            <class name="Forever21.Login"></class>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+<!--    <test name="MyWishlist">-->
+<!--        <classes>-->
+<!--            <class name="Forever21.MyWishlist"></class>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+<!--    <test name="Accessories">-->
+<!--        <classes>-->
+<!--            <class name="Forever21.Accessories"></class>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+<!--    <test name="NewArrivals">-->
+<!--        <classes>-->
+<!--            <class name="Forever21.NewArrivals"></class>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+
+
+<!--    <test name="OnlineOnly">-->
+<!--        <classes>-->
+<!--            <class name="Forever21.OnlineOnly"></class>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+<!--    <test name="Sale">-->
+<!--        <classes>-->
+<!--            <class name="Forever21.Sale"></class>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+
+<!--    <test name="ShopbyCategory">-->
+<!--        <classes>-->
+<!--            <class name="Forever21.ShopbyCategory"></class>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+<!--    <test name="ShopByOccasion">-->
+<!--        <classes>-->
+<!--            <class name="Forever21.ShopByOccasion"></class>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+<!--    <test name="ShopByStyle">-->
+<!--        <classes>-->
+<!--            <class name="Forever21.ShopByStyle"></class>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+<!--    <test name="Size">-->
+<!--        <classes>-->
+<!--            <class name="Forever21.Size"></class>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+<!--    <test name="ViewAll">-->
+<!--        <classes>-->
+<!--            <class name="Forever21.ViewAll"></class>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+<!--    <test name="Size">-->
+<!--        <classes>-->
+<!--            <class name="Forever21.Size"></class>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--</suite>-->
