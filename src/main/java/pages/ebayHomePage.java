@@ -1,18 +1,13 @@
 package pages;
 
 import base.CommonAPI;
-import com.sun.org.apache.xalan.internal.xsltc.dom.AdaptiveResultTreeImpl;
-import org.apache.commons.lang3.text.translate.NumericEntityUnescaper;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import java.util.ArrayList;
-import java.util.List;
-
-public class HomePage extends CommonAPI {
-    public HomePage(WebDriver driver) {
+public class ebayHomePage extends CommonAPI {
+    public ebayHomePage(WebDriver driver) {
         PageFactory.initElements(driver, this);
     }
 
