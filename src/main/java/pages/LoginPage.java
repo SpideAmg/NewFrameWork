@@ -1,52 +1,60 @@
-package pages;
+package Pages;
 
 import base.CommonAPI;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.remote.server.handler.SendKeys;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-
+import org.testng.annotations.Test;
 
 public class LoginPage extends CommonAPI {
+
+    @FindBy(xpath = "//*[@id=\"ctl00_ContentLeftSide_ucLogin_txtEmailAddress\"]")
+    private WebElement enterEmailAdress;
+
+    @FindBy(xpath = "//*[@id=\"ctl00_ContentLeftSide_ucLogin_txtPassword\"]")
+    private WebElement enterpassWord;
+    @FindBy(css = "#ctl00_ContentLeftSide_ucLogin_btnSignIn")
+    private WebElement singIn;
+
+    @FindBy(css = "#ctl00_ContentLeftSide_hlRegistration > span")
+    private WebElement CreatAccountBtn;
+    @FindBy(css = "#ctl00_ContentLeftSide_ucLogin_vsRegister > ul > li > a")
+
+    private WebElement PasswordisRequired;
+
+
+    @FindBy(xpath = "//*[@id=\"ctl00_ContentLeftSide_ucLogin_vsRegister\"]/ul/li")
+    private WebElement InvalidusernamOrPassWord;
 
     public LoginPage(WebDriver driver) {
         PageFactory.initElements(driver, this);
     }
 
-    @FindBy(css = "body > div.page > header > div.header--mainbar > div > div.header__utility-items > div.header__account.header__utility-item > a > svg")
-    WebElement LoginPage;
+    public void typeOnEmailAdressField(String Text) {
 
-    @FindBy(css = " LoginPage login = new LoginPage(getDriver());")
-    WebElement CreateAccount;
-
-    @FindBy(css = "#registration-form-fname")
-            WebElement TypeFirstNameLastNameandValidInformation;
-
-
-//   @FindBy(css = "#navigation > div > ul > li:nth-child(2) > label")
-           WebElement Hoverover;
-
-    //       @FindBy(css = "#login-form-email")
-    WebElement ValidEmail;
-
-    //       @FindBy(css = "#login-form-password")
-    WebElement ValidPassword;
-
-
-    public void ClickOnLoginBtn() {
-        click(LoginPage);
-        waitFor(3);
+        type(enterEmailAdress, Text);
     }
 
-    public void CreateAccount() {
-        ClickOnLoginBtn();
-        click(CreateAccount);
-        waitFor(3);
+    public void typeOnPassWordField(String Text) {
+
+        type(enterpassWord, Text);
+    }
+
+    public void clickSigninBtn() {
+
+        click(singIn);
 
     }
 
-
+    public String getPasswordisRequiredText() {
+        return getElementText(PasswordisRequired);
 
     }
 
+    public String getInvalidusernamOrPassWordText() {
+        return getElementText(InvalidusernamOrPassWord);
 
+    }
+}
