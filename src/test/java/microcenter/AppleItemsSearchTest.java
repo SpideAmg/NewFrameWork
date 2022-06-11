@@ -1,7 +1,6 @@
 package microcenter;
 
 import Pages.AppleItemspage;
-import Pages.HomePage;
 
 import base.CommonAPI;
 import org.testng.annotations.Test;
@@ -10,7 +9,7 @@ public class AppleItemsSearchTest extends CommonAPI {
 
     @Test
     public void macbookItems() {
-        HomePage homePage = new HomePage(getDriver());
+        Pages.HomePage homePage = new Pages.HomePage(getDriver());
         AppleItemspage AppleItemspage = new AppleItemspage(getDriver());
         homePage.clickOnStorePopUp();
         homePage.hoverOverAplleItemsBtn(getDriver());
@@ -19,7 +18,7 @@ public class AppleItemsSearchTest extends CommonAPI {
 
     @Test
     public void macDesktopsItems() {
-        HomePage homePage = new HomePage(getDriver());
+        Pages.HomePage homePage = new Pages.HomePage(getDriver());
         AppleItemspage AppleItemspage = new AppleItemspage(getDriver());
         homePage.clickOnStorePopUp();
         homePage.hoverOverAplleItemsBtn(getDriver());
@@ -28,7 +27,7 @@ public class AppleItemsSearchTest extends CommonAPI {
     }
      @Test
     public void ipadItems() {
-        HomePage homePage = new HomePage(getDriver());
+        Pages.HomePage homePage = new Pages.HomePage(getDriver());
         AppleItemspage AppleItemspage = new AppleItemspage(getDriver());
         homePage.clickOnStorePopUp();
         homePage.hoverOverAplleItemsBtn(getDriver());
@@ -38,7 +37,7 @@ public class AppleItemsSearchTest extends CommonAPI {
     }
     @Test
     public void AirPodItems() {
-        HomePage homePage = new HomePage(getDriver());
+        Pages.HomePage homePage = new Pages.HomePage(getDriver());
         AppleItemspage AppleItemspage = new AppleItemspage(getDriver());
         homePage.clickOnStorePopUp();
         homePage.hoverOverAplleItemsBtn(getDriver());
@@ -48,7 +47,7 @@ public class AppleItemsSearchTest extends CommonAPI {
     }
       @Test
     public void AppleWatchItems() {
-        HomePage homePage = new HomePage(getDriver());
+        Pages.HomePage homePage = new Pages.HomePage(getDriver());
         AppleItemspage AppleItemspage = new AppleItemspage(getDriver());
         homePage.clickOnStorePopUp();
         homePage.hoverOverAplleItemsBtn(getDriver());

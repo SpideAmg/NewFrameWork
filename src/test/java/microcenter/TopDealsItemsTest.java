@@ -1,6 +1,5 @@
 package microcenter;
 
-import Pages.HomePage;
 import base.CommonAPI;
 
 import org.testng.annotations.Test;
@@ -9,7 +8,7 @@ public class TopDealsItemsTest extends CommonAPI {
 
     @Test
     public void AllTopDeals() {
-        HomePage homePage = new HomePage(getDriver());
+        Pages.HomePage homePage = new Pages.HomePage(getDriver());
         homePage.hoverOverOroducts(getDriver());
         homePage.clickOnStorePopUp();
         homePage.clickOnTopDealsItems();
@@ -21,7 +20,7 @@ public class TopDealsItemsTest extends CommonAPI {
 
     @Test
     public void monitors() {
-        HomePage homePage = new HomePage(getDriver());
+        Pages.HomePage homePage = new Pages.HomePage(getDriver());
         homePage.hoverOverOroducts(getDriver());
         homePage.clickOnStorePopUp();
         homePage.clickOnTopDealsItems();
@@ -31,7 +30,7 @@ public class TopDealsItemsTest extends CommonAPI {
 
     @Test
     public void Television() {
-        HomePage homePage = new HomePage(getDriver());
+        Pages.HomePage homePage = new Pages.HomePage(getDriver());
         homePage.hoverOverOroducts(getDriver());
         homePage.clickOnStorePopUp();
         homePage.clickOnTopDealsItems();

@@ -1,17 +1,14 @@
 package microcenter;
 
-import Pages.AppleItemspage;
 import Pages.BrandsPage;
-import Pages.HomePage;
 import base.CommonAPI;
-import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class AvailableBrandsTest extends CommonAPI {
 
     @Test
     public void ViewAllAvailableBrands() {
-        HomePage homePage = new HomePage(getDriver());
+        Pages.HomePage homePage = new Pages.HomePage(getDriver());
         BrandsPage BrandPage = new BrandsPage (getDriver());
         homePage.clickOnStorePopUp();
         homePage.hoverOverOroducts(getDriver());
@@ -22,7 +19,7 @@ public class AvailableBrandsTest extends CommonAPI {
     }
     @Test
     public void search_Acer_Brand() {
-        HomePage homePage = new HomePage(getDriver());
+        Pages.HomePage homePage = new Pages.HomePage(getDriver());
          BrandsPage BrandPage = new BrandsPage (getDriver());
         homePage.clickOnStorePopUp();
         homePage.hoverOverOroducts(getDriver());
@@ -32,7 +29,7 @@ public class AvailableBrandsTest extends CommonAPI {
     }
      @Test
     public void search_HP_Brand() {
-        HomePage homePage = new HomePage(getDriver());
+        Pages.HomePage homePage = new Pages.HomePage(getDriver());
          BrandsPage BrandPage = new BrandsPage (getDriver());
         homePage.clickOnStorePopUp();
         homePage.hoverOverOroducts(getDriver());
@@ -43,7 +40,7 @@ public class AvailableBrandsTest extends CommonAPI {
     }
      @Test
     public void search_Samsung_Brand() {
-        HomePage homePage = new HomePage(getDriver());
+        Pages.HomePage homePage = new Pages.HomePage(getDriver());
         BrandsPage BrandPage = new BrandsPage (getDriver());
         homePage.clickOnStorePopUp();
         homePage.hoverOverOroducts(getDriver());

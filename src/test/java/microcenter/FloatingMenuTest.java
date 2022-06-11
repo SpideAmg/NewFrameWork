@@ -1,7 +1,6 @@
 package microcenter;
 
 
-import Pages.HomePage;
 import Pages.LoginPage;
 import base.CommonAPI;
 import org.testng.Assert;
@@ -12,7 +11,7 @@ public class FloatingMenuTest extends CommonAPI {
 
     @Test//(enabled = false)
     public void missingPassWordField() {
-        HomePage homePage = new HomePage(getDriver());
+        Pages.HomePage homePage = new Pages.HomePage(getDriver());
         LoginPage loginPage = new LoginPage(getDriver());
         homePage.hoverOverFloatingMenu(getDriver());
         homePage.clickOnAcountBtn();
@@ -26,7 +25,7 @@ public class FloatingMenuTest extends CommonAPI {
 
     @Test//(enabled = false)
     public void invalidPassWord() {
-        HomePage homePage = new HomePage(getDriver());
+        Pages.HomePage homePage = new Pages.HomePage(getDriver());
         LoginPage loginPage = new LoginPage(getDriver());
         homePage.hoverOverFloatingMenu(getDriver());
         homePage.clickOnAcountBtn();
@@ -41,7 +40,7 @@ public class FloatingMenuTest extends CommonAPI {
 
     @Test//(enabled = false)
     public void invalidEmailAdress() {
-        HomePage homePage = new HomePage(getDriver());
+        Pages.HomePage homePage = new Pages.HomePage(getDriver());
         LoginPage loginPage = new LoginPage(getDriver());
         homePage.hoverOverFloatingMenu(getDriver());
         homePage.clickOnAcountBtn();
@@ -55,7 +54,7 @@ public class FloatingMenuTest extends CommonAPI {
 
     @Test//(enabled = false)
     public void missingEmailAdressField() {
-        HomePage homePage = new HomePage(getDriver());
+        Pages.HomePage homePage = new Pages.HomePage(getDriver());
         LoginPage loginPage = new LoginPage(getDriver());
         homePage.hoverOverFloatingMenu(getDriver());
         homePage.clickOnAcountBtn();
@@ -66,7 +65,7 @@ public class FloatingMenuTest extends CommonAPI {
 
     @Test//(enabled = false)
     public void missingPssWordField() {
-        HomePage homePage = new HomePage(getDriver());
+        Pages.HomePage homePage = new Pages.HomePage(getDriver());
         LoginPage loginPage = new LoginPage(getDriver());
         homePage.hoverOverFloatingMenu(getDriver());
         homePage.clickOnAcountBtn();

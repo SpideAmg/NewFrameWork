@@ -1,8 +1,6 @@
 package microcenter;
 
 import Pages.CreatAcountPage;
-import Pages.HomePage;
-import Pages.LoginPage;
 import base.CommonAPI;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -11,7 +9,7 @@ public class CreatAccountTest extends CommonAPI {
 
     @Test
     public void missigFirstNameField() {
-        HomePage homePage = new HomePage(getDriver());
+        Pages.HomePage homePage = new Pages.HomePage(getDriver());
         CreatAcountPage CreatAcountPage = new CreatAcountPage(getDriver());
         homePage.hoverOverFloatingMenu(getDriver());
         homePage.clickOnAcountBtn();
@@ -30,7 +28,7 @@ public class CreatAccountTest extends CommonAPI {
     }
     @Test
     public void missingEmailAdressField() {
-        HomePage homePage = new HomePage(getDriver());
+        Pages.HomePage homePage = new Pages.HomePage(getDriver());
         CreatAcountPage CreatAcountPage = new CreatAcountPage(getDriver());
         homePage.hoverOverFloatingMenu(getDriver());
         homePage.clickOnAcountBtn();
@@ -49,7 +47,7 @@ public class CreatAccountTest extends CommonAPI {
     }
     //@Test
     public void missigPassWordField() {
-        HomePage homePage = new HomePage(getDriver());
+        Pages.HomePage homePage = new Pages.HomePage(getDriver());
         CreatAcountPage CreatAcountPage = new CreatAcountPage(getDriver());
         homePage.hoverOverFloatingMenu(getDriver());
         homePage.clickOnAcountBtn();
@@ -68,7 +66,7 @@ public class CreatAccountTest extends CommonAPI {
 
        // @Test
         public void missigPhoneNumberField() {
-            HomePage homePage = new HomePage(getDriver());
+            Pages.HomePage homePage = new Pages.HomePage(getDriver());
             CreatAcountPage CreatAcountPage = new CreatAcountPage(getDriver());
             homePage.hoverOverFloatingMenu(getDriver());
             homePage.clickOnAcountBtn();

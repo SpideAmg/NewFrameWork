@@ -6,7 +6,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class microcenterHomePage extends CommonAPI {
+public class HomePage extends CommonAPI {
 
     @FindBy(css = "#hypSignInWrapper > div.unameContainer > div.uname")
     private WebElement floatingMenu;
@@ -68,7 +68,7 @@ public class microcenterHomePage extends CommonAPI {
     private WebElement Search_Samsung_Brand;
 
 
-    public microcenterHomePage(WebDriver driver) {
+    public HomePage(WebDriver driver) {
 
         PageFactory.initElements(driver, this);
     }
